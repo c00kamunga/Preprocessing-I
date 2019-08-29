@@ -134,3 +134,19 @@ html,
 body {
   height: 100%;
 }
+header nav {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+header nav a {
+  text-decoration: none;
+}
+header .nameAndProfession {
+  border: 3px solid black;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem 1rem;
+}
