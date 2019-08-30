@@ -134,19 +134,26 @@ html,
 body {
   height: 100%;
 }
-header nav {
+body header nav {
   display: flex;
   justify-content: center;
   justify-content: space-evenly;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-header nav a {
+body header nav a {
   text-decoration: none;
 }
-header .nameAndProfession {
+body header .nameAndProfession {
   border: 3px solid black;
   width: 90%;
   margin: 0 auto;
   padding: 1rem 1rem;
+}
+body .skills {
+  border: 3px solid black;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem 1rem;
+  margin-top: 1rem;
 }
