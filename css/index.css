@@ -177,9 +177,8 @@ body .skills {
   justify-content: space-around;
   border: 3px solid black;
   width: 90%;
-  margin: 0 auto;
+  margin: 1rem auto;
   padding: 2rem 2rem;
-  margin-top: 1rem;
 }
 body .skills .good {
   padding: 1rem 1rem;
@@ -192,4 +191,13 @@ body .skills .not-good {
 body .skills .wish {
   padding: 1rem 1rem;
   border: 3px dashed lightseagreen;
+}
+body .work-history {
+  border: 3px solid black;
+  padding: 2rem 2rem;
+  margin-top: 1rem;
+  width: 90%;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: space-around;
 }
