@@ -63,6 +63,21 @@ html, body {
 }
 
 
+@colorBlack: black;
+
+.animationBox{
+	border: 3px solid @colorBlack;
+	background-color: lightgreen;
+}
+
+
+.hoverAnimation{
+	transform: rotate(360deg);
+	transition-duration: 800ms;
+	padding: 10rem 10rem 10rem 10rem;
+}
+
+
 
 body{
 
@@ -86,29 +101,25 @@ body{
 		 .nameAndProfession{
 			display: flex;
 			justify-content: space-between;
-			border: 3px solid black;
+			border: 3px solid @colorBlack;
 			width: 90%;
 			margin: 0 auto;
 			padding: 1rem 1rem;
 			.fun-stuff{
-				border: 3px solid black;
-				background-color: lightgreen;
+				.animationBox;
 			}
 			.fun-stuff:hover{
+				.hoverAnimation;
 				background-color: lightblue;
-				transform: rotate(360deg);
-				transition-duration: 800ms;
-				padding: 10rem 10rem 10rem 10rem;
 			}
 			.awesome-stuff{
-				border: 3px solid black;
+				.animationBox;
 				background-color: lightseagreen;
 			}
 			.awesome-stuff:hover{
+				.hoverAnimation;
 				background-color: lightsalmon;
 				transform: rotatey(360deg);
-				transition-duration: 800ms;
-				padding: 10rem 10rem 10rem 10rem;
 			}
 		}
 	}
@@ -116,7 +127,7 @@ body{
 			.skills{
 			display: flex;
 			justify-content: space-around;
-			border: 3px solid black;
+			border: 3px solid @colorBlack;
 			width: 90%;
 			margin: 1rem auto;
 			padding: 2rem 2rem;
@@ -136,13 +147,20 @@ body{
 	}
 
 	.work-history{
-		border: 3px solid black;
+		border: 3px solid @colorBlack;
 		padding: 2rem 2rem;
 		margin-top: 1rem;
 		width: 90%;
 		margin: 1rem auto;
 		display: flex;
 		justify-content: space-around;
+	}
+	
+	.contact{
+		border: 3px solid @colorBlack;
+		width: 90%;
+		margin: 1rem auto;
+		padding: 2rem 2rem;
 	}
 }
 

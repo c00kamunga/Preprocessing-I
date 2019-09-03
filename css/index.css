@@ -134,6 +134,15 @@ html,
 body {
   height: 100%;
 }
+.animationBox {
+  border: 3px solid black;
+  background-color: lightgreen;
+}
+.hoverAnimation {
+  transform: rotate(360deg);
+  transition-duration: 800ms;
+  padding: 10rem 10rem 10rem 10rem;
+}
 body header nav {
   display: flex;
   justify-content: center;
@@ -157,20 +166,22 @@ body header .nameAndProfession .fun-stuff {
   background-color: lightgreen;
 }
 body header .nameAndProfession .fun-stuff:hover {
-  background-color: lightblue;
   transform: rotate(360deg);
   transition-duration: 800ms;
   padding: 10rem 10rem 10rem 10rem;
+  background-color: lightblue;
 }
 body header .nameAndProfession .awesome-stuff {
   border: 3px solid black;
+  background-color: lightgreen;
   background-color: lightseagreen;
 }
 body header .nameAndProfession .awesome-stuff:hover {
-  background-color: lightsalmon;
-  transform: rotatey(360deg);
+  transform: rotate(360deg);
   transition-duration: 800ms;
   padding: 10rem 10rem 10rem 10rem;
+  background-color: lightsalmon;
+  transform: rotatey(360deg);
 }
 body .skills {
   display: flex;
@@ -200,4 +211,10 @@ body .work-history {
   margin: 1rem auto;
   display: flex;
   justify-content: space-around;
+}
+body .contact {
+  border: 3px solid black;
+  width: 90%;
+  margin: 1rem auto;
+  padding: 2rem 2rem;
 }
