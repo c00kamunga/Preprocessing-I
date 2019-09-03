@@ -219,8 +219,10 @@ body .work-history {
   margin-top: 1rem;
   width: 90%;
   margin: 1rem auto;
+}
+body .work-history .work-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 body .contact {
   border: 3px solid black;
