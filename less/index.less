@@ -54,6 +54,124 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
 }
+
+.square(){
+	height: 300px;
+	width: 300px;
+}
+
+
+@colorBlack: black;
+
+.animationBox{
+	border: 3px solid @colorBlack;
+	background-color: lightgreen;
+}
+
+
+.hoverAnimation{
+	transform: rotate(360deg);
+	transition-duration: 800ms;
+	padding: 10rem 10rem 10rem 10rem;
+}
+
+
+
+body{
+
+	
+
+	header{
+	
+		 nav{
+			display: flex;
+			justify-content: center;
+			justify-content: space-evenly;
+			padding-top: 1rem;
+			padding-bottom: 1rem;
+	
+			a{
+				text-decoration: none;
+			}
+		 }
+	
+		
+		 .nameAndProfession{
+			display: flex;
+			justify-content: space-between;
+			border: 3px solid @colorBlack;
+			width: 90%;
+			margin: 0 auto;
+			padding: 1rem 1rem;
+			.fun-stuff{
+				.animationBox;
+			}
+			.fun-stuff:hover{
+				.hoverAnimation;
+				background-color: lightblue;
+				@media(max-width: 500px){
+					padding: 0;
+				}
+			}
+			.awesome-stuff{
+				.animationBox;
+				background-color: lightseagreen;
+			}
+			.awesome-stuff:hover{
+				.hoverAnimation;
+				background-color: lightsalmon;
+				transform: rotatey(360deg);
+				@media(max-width: 500px){
+					padding: 0;
+				}
+			}
+		}
+	}
+
+			.skills{
+			display: flex;
+			justify-content: space-around;
+			border: 3px solid @colorBlack;
+			width: 90%;
+			margin: 1rem auto;
+			padding: 2rem 2rem;
+
+			.good{
+				padding: 1rem 1rem;
+				border: 3px solid lightgray;
+			}
+			.not-good{
+				padding: 1rem 1rem;
+				border: 3px dotted lightgreen;
+			}
+			.wish{
+				padding: 1rem 1rem;
+				border: 3px dashed lightseagreen;
+			}
+	}
+
+	.work-history{
+		border: 3px solid @colorBlack;
+		padding: 2rem 2rem;
+		margin-top: 1rem;
+		width: 90%;
+		margin: 1rem auto;
+	.work-list{
+		display: flex;
+		justify-content: space-evenly;
+	}
+	}
+	
+	.contact{
+		border: 3px solid @colorBlack;
+		width: 90%;
+		margin: 1rem auto;
+		padding: 2rem 2rem;
+	}
+}
+
+
+
 
